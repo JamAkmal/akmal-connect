@@ -1,10 +1,11 @@
 import { MapPin, Briefcase, Globe } from "lucide-react";
+import Counter from "./Counter";
 
 const stats = [
-  { label: "Years Experience", value: "4+" },
-  { label: "Projects Delivered", value: "20+" },
-  { label: "Happy Clients", value: "15+" },
-  { label: "Tech Stacks", value: "10+" },
+  { label: "Years Experience", value: 4 },
+  { label: "Projects Delivered", value: 20 },
+  { label: "Happy Clients", value: 12 },
+  { label: "Tech Stacks", value: 10 },
 ];
 
 export const About = () => {
@@ -12,7 +13,6 @@ export const About = () => {
     <section id="about" className="py-24 relative">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <p className="text-sm font-mono text-primary mb-3">// 01. About Me</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-6">
             Engineering software that <span className="gradient-text">drives real value</span>
           </h2>
@@ -26,7 +26,7 @@ export const About = () => {
             interfaces.
           </p>
           <p>
-            I don't just write code — I build solutions that drive real business value. From optimizing MySQL databases
+            I don't just write code - I build solutions that drive real business value. From optimizing MySQL databases
             to developing seamless REST APIs, I create clean, maintainable, and scalable applications.
           </p>
           <p className="flex items-start gap-3 text-foreground">
@@ -44,7 +44,7 @@ export const About = () => {
               key={s.label}
               className="gradient-card-bg border border-border rounded-xl p-6 text-center shadow-card hover:border-primary/50 transition-smooth"
             >
-              <p className="font-display text-3xl sm:text-4xl font-bold gradient-text">{s.value}</p>
+              <p className="font-display text-3xl sm:text-4xl font-bold gradient-text"><Counter end={s.value} />+</p>
               <p className="text-sm text-muted-foreground mt-1">{s.label}</p>
             </div>
           ))}

@@ -1,6 +1,6 @@
 import { ArrowRight, MessageCircle, MapPin, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/akmal-portrait.jpg";
+import portrait from "@/assets/akmal.jpeg";
 
 const WHATSAPP_URL =
   "https://wa.me/923027871652?text=Hi%20Akmal%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project.";
@@ -38,7 +38,7 @@ export const Hero = () => {
 
           <p className="text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
             I bridge the gap between legacy reliability and modern web innovation. With{" "}
-            <span className="text-foreground font-semibold">4+ years of experience</span> as a Full-Stack Developer,
+            <span className="text-foreground font-semibold">5+ years of experience</span> as a Full-Stack Developer,
             I specialize in building scalable backend architectures and high-performance user interfaces.
           </p>
 
@@ -88,7 +88,7 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-4 -left-4 bg-card border border-border rounded-xl px-4 py-3 shadow-card animate-float">
-              <p className="text-2xl font-bold gradient-text">4+ yrs</p>
+              <p className="text-2xl font-bold gradient-text">5+ yrs</p>
               <p className="text-xs text-muted-foreground">Experience</p>
             </div>
             <div className="absolute -top-4 -right-4 bg-card border border-border rounded-xl px-4 py-3 shadow-card animate-float" style={{ animationDelay: "1s" }}>

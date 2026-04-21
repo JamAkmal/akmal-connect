@@ -47,12 +47,11 @@ export const Skills = () => {
     <section id="skills" className="py-24 relative bg-card/30">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <p className="text-sm font-mono text-primary mb-3">// 02. Skills & Technologies</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             My <span className="gradient-text">technical toolkit</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            A modern stack with deep expertise in legacy systems — the rare combination clients need.
+            A modern stack with deep expertise in legacy systems - the rare combination clients need.
           </p>
         </div>
 

@@ -4,7 +4,7 @@ const services = [
   {
     icon: Code,
     title: "Custom Web Applications",
-    description: "Tailor-made apps built with Laravel, React, Vue, or Node.js — from MVPs to enterprise platforms.",
+    description: "Tailor-made apps built with Laravel, React, Vue, or Node.js - from MVPs to enterprise platforms.",
     highlight: "Most popular",
   },
   {
@@ -16,7 +16,7 @@ const services = [
   {
     icon: RefreshCw,
     title: "Legacy System Modernization",
-    description: "Specialized in ColdFusion maintenance & upgrades — bridge old systems with modern frontends without expensive rewrites.",
+    description: "Specialized in ColdFusion maintenance & upgrades - bridge old systems with modern frontends without expensive rewrites.",
   },
   {
     icon: Plug,
@@ -43,12 +43,11 @@ export const Services = () => {
     <section id="services" className="py-24 relative">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-14">
-          <p className="text-sm font-mono text-primary mb-3">// 05. Services</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             How I can <span className="gradient-text">help your business</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            From quick WordPress sites to enterprise platforms — pick what fits your need.
+            From quick WordPress sites to enterprise platforms - pick what fits your need.
           </p>
         </div>
 

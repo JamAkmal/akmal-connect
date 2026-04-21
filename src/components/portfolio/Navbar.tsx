@@ -54,31 +54,6 @@ export const Navbar = () => {
             </li>
           ))}
         </ul>
-
-        <div className="flex items-center gap-2">
-          <Button
-            size="icon"
-            variant="ghost"
-            onClick={toggle}
-            aria-label="Toggle theme"
-          >
-            {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </Button>
-          <Button asChild variant="hero" size="sm" className="hidden sm:inline-flex">
-            <a href="/resume.pdf" download>
-              <Download className="h-4 w-4" /> Resume
-            </a>
-          </Button>
-          <Button
-            size="icon"
-            variant="ghost"
-            className="lg:hidden"
-            onClick={() => setOpen((o) => !o)}
-            aria-label="Toggle menu"
-          >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </Button>
-        </div>
       </nav>
 
       {open && (

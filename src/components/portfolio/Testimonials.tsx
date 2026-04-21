@@ -25,8 +25,7 @@ export const Testimonials = () => {
   return (
     <section className="py-24 relative bg-card/30">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-14">
-          <p className="text-sm font-mono text-primary mb-3">// 06. Testimonials</p>
+        <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold">
             What clients <span className="gradient-text">say</span>
           </h2>

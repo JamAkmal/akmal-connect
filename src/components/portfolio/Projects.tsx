@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     title: "CRM Automation Platform",
     description:
-      "End-to-end CRM with automated lead capture, sales pipelines, custom reporting, and email workflows — built from scratch for enterprise use.",
+      "End-to-end CRM with automated lead capture, sales pipelines, custom reporting, and email workflows - built from scratch for enterprise use.",
     tech: ["PHP", "Laravel", "MySQL", "jQuery"],
     category: ["Laravel"],
     result: "Reduced manual data entry by 70% for the client's sales team",
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     title: "Gym & Fitness Management Dashboard",
     description:
-      "Comprehensive admin dashboard for gyms — member subscriptions, class scheduling, trainer management, payments and progress tracking.",
+      "Comprehensive admin dashboard for gyms - member subscriptions, class scheduling, trainer management, payments and progress tracking.",
     tech: ["Vue.js", "Laravel", "MySQL", "Stripe"],
     category: ["Laravel", "React"],
     result: "Deployed across 5 fitness centers in Pakistan",
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: "Modular ColdFusion Enterprise App",
     description:
-      "Modernized a critical ColdFusion enterprise application — refactored monolithic code into modules, added REST APIs, and integrated modern UI.",
+      "Modernized a critical ColdFusion enterprise application - refactored monolithic code into modules, added REST APIs, and integrated modern UI.",
     tech: ["ColdFusion", "SQL Server", "JavaScript"],
     category: ["ColdFusion"],
     result: "Cut maintenance time in half while extending product lifespan by 5+ years",
@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: "CRM Platform (React + ColdFusion)",
     description:
-      "Hybrid CRM bridging a legacy ColdFusion backend with a modern React.js frontend — proving you can modernize without rewriting everything.",
+      "Hybrid CRM bridging a legacy ColdFusion backend with a modern React.js frontend - proving you can modernize without rewriting everything.",
     tech: ["React.js", "ColdFusion", "REST API"],
     category: ["React", "ColdFusion"],
     result: "Saved client $80K vs. full rewrite, delivered in 4 months",
@@ -76,12 +76,11 @@ export const Projects = () => {
     <section id="projects" className="py-24 relative bg-card/30">
       <div className="container">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <p className="text-sm font-mono text-primary mb-3">// 04. Featured Projects</p>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Selected <span className="gradient-text">work</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Real projects with measurable business impact — across modern and legacy stacks.
+            Real projects with measurable business impact - across modern and legacy stacks.
           </p>
         </div>
 
@@ -134,19 +133,6 @@ export const Projects = () => {
                       {t}
                     </span>
                   ))}
-                </div>
-
-                <div className="flex gap-2 mt-auto">
-                  <Button asChild size="sm" variant="outline" className="flex-1">
-                    <a href={p.liveUrl ?? "#"} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-3.5 w-3.5" /> Live Demo
-                    </a>
-                  </Button>
-                  <Button asChild size="sm" variant="ghost" className="flex-1">
-                    <a href={p.githubUrl ?? "#"} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-3.5 w-3.5" /> Code
-                    </a>
-                  </Button>
                 </div>
               </div>
             </article>

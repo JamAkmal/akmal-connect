@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { toast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
 
 const schema = z.object({
   name: z.string().trim().min(2, "Name must be at least 2 characters").max(100),
@@ -23,7 +24,9 @@ export const Contact = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     const result = schema.safeParse(form);
+
     if (!result.success) {
       const fieldErrors: Record<string, string> = {};
       result.error.errors.forEach((err) => {
@@ -32,31 +35,44 @@ export const Contact = () => {
       setErrors(fieldErrors);
       return;
     }
+
     setErrors({});
     setSubmitting(true);
 
-    // Open user's mail client with prefilled content (no backend required)
-    const subject = encodeURIComponent(`New Project Inquiry from ${result.data.name}`);
-    const body = encodeURIComponent(
-      `Name: ${result.data.name}\nEmail: ${result.data.email}\n\n${result.data.message}`
-    );
-    window.location.href = `mailto:kipsakmal01@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      await emailjs.send(
+        "service_7s7acw9",
+        "template_njbeaxo",
+        {
+          name: result.data.name,
+          email: result.data.email,
+          message: result.data.message,
+        },
+        "e9BE3Ap72kZKwuHyS"
+      );
 
-    setTimeout(() => {
-      setSubmitting(false);
       toast({
-        title: "Message ready to send!",
-        description: "Your email client has opened. For instant reply, message me on WhatsApp.",
+        title: "Message sent successfully!",
+        description: "I'll get back to you soon 🚀",
       });
+
       setForm({ name: "", email: "", message: "" });
-    }, 800);
+    } catch (error) {
+      console.error(error);
+      toast({
+        title: "Failed to send message",
+        description: "Please try again or contact via WhatsApp.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
     <section id="contact" className="py-24 relative">
       <div className="container">
-        <div className="max-w-3xl mx-auto text-center mb-14">
-          <p className="text-sm font-mono text-primary mb-3">// 07. Contact</p>
+        <div className="max-w-3xl mx-auto text-center mb-10">
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
             Let's <span className="gradient-text">build something great</span>
           </h2>
@@ -133,7 +149,6 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-
           <form
             onSubmit={handleSubmit}
             className="gradient-card-bg border border-border rounded-2xl p-6 sm:p-8 shadow-card space-y-5"
