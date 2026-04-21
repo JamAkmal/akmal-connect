@@ -14,8 +14,6 @@ export const Footer = () => {
             </a>
             <p className="text-sm text-muted-foreground leading-relaxed">
               Full-Stack Software Engineer bridging legacy reliability with modern web innovation.
-            </p>
-            <p className="text-sm text-muted-foreground leading-relaxed">
               A software engineer with full-stack expertise across both modern and legacy technologies, 
               skilled in maintaining enterprise systems. Delivers end-to-end solutions with a strong 
               focus on performance, maintainability, and user experience.
