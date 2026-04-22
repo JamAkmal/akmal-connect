@@ -21,7 +21,7 @@ export const About = () => {
         <div className="max-w-4xl mx-auto space-y-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
           <p>
             I bridge the gap between <span className="text-foreground font-semibold">legacy reliability</span> and{" "}
-            <span className="text-foreground font-semibold">modern web innovation</span>. With 4+ years of experience as
+            <span className="text-foreground font-semibold">modern web innovation</span>. With 3+ years of experience as
             a Full-Stack Developer, I specialize in building scalable backend architectures and high-performance user
             interfaces.
           </p>
