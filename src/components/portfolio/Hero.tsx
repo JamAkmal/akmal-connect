@@ -55,12 +55,6 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <div className="pt-2">
-            <p className="font-mono text-sm text-muted-foreground">
-              <span className="text-primary">$</span> PHP • Laravel • React.js • Node.js • Vue.js • ColdFusion 
-            </p>
-          </div>
-
           <div className="flex flex-wrap gap-4 pt-4 text-sm text-muted-foreground">
             <a href="tel:+923027871652" className="flex items-center gap-2 hover:text-primary transition-smooth">
               <Phone className="h-4 w-4 text-primary" /> +92 302 7871 652
@@ -92,7 +86,7 @@ export const Hero = () => {
               <p className="text-xs text-muted-foreground">Experience</p>
             </div>
             <div className="absolute -top-4 -right-4 bg-card border border-border rounded-xl px-4 py-3 shadow-card animate-float" style={{ animationDelay: "1s" }}>
-              <p className="text-2xl font-bold gradient-text">20+</p>
+              <p className="text-2xl font-bold gradient-text">15+</p>
               <p className="text-xs text-muted-foreground">Projects</p>
             </div>
           </div>
