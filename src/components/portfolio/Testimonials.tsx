@@ -4,7 +4,7 @@ const testimonials = [
   {
     name: "Sarah Khan",
     role: "Founder, Spice Route Restaurant",
-    text: "Akmal redesigned our restaurant website on WordPress and the difference was night and day. Online reservations tripled in 2 months. He understood exactly what a small business needs.",
+    text: "Akmal redesigned our restaurant website and the difference was night and day. Online reservations tripled in 2 months. He understood exactly what a small business needs.",
     initials: "SK",
   },
   {

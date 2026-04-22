@@ -54,17 +54,9 @@ const projects: Project[] = [
     category: ["React", "ColdFusion"],
     result: "Saved client $80K vs. full rewrite, delivered in 4 months",
   },
-  {
-    title: "Restaurant Website (WordPress + Elementor)",
-    description:
-      "SEO-optimized, fast-loading restaurant website with online menu, table reservations, and Google Maps integration. Easy to manage for non-tech owners.",
-    tech: ["WordPress", "Elementor", "SEO", "PHP"],
-    category: ["WordPress"],
-    result: "Increased online reservations by 3x within 60 days of launch",
-  },
 ];
 
-const filters = ["All", "Laravel", "React", "ColdFusion", "WordPress"] as const;
+const filters = ["All", "Laravel", "React", "ColdFusion"] as const;
 
 export const Projects = () => {
   const [active, setActive] = useState<(typeof filters)[number]>("All");

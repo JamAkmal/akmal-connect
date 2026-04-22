@@ -57,7 +57,7 @@ export const Hero = () => {
 
           <div className="pt-2">
             <p className="font-mono text-sm text-muted-foreground">
-              <span className="text-primary">$</span> PHP • Laravel • React.js • Node.js • Vue.js • ColdFusion • WordPress
+              <span className="text-primary">$</span> PHP • Laravel • React.js • Node.js • Vue.js • ColdFusion 
             </p>
           </div>
 

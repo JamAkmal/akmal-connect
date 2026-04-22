@@ -2,9 +2,9 @@ import { MapPin, Briefcase, Globe } from "lucide-react";
 import Counter from "./Counter";
 
 const stats = [
-  { label: "Years Experience", value: 4 },
-  { label: "Projects Delivered", value: 20 },
-  { label: "Happy Clients", value: 12 },
+  { label: "Years Experience", value: 3 },
+  { label: "Projects Delivered", value: 15 },
+  { label: "Happy Clients", value: 8 },
   { label: "Tech Stacks", value: 10 },
 ];
 

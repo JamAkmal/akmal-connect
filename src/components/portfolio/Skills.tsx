@@ -17,11 +17,6 @@ const skillGroups = [
     skills: ["MySQL", "SQL", "Database Architecture", "Query Optimization"],
   },
   {
-    icon: Globe2,
-    title: "WordPress Expert",
-    skills: ["Custom Themes", "Elementor", "SEO Optimization", "Plugin Development", "WooCommerce"],
-  },
-  {
     icon: Layers,
     title: "Integrations",
     skills: ["Stripe", "PayPal", "Third-Party APIs", "Webhooks", "OAuth"],
@@ -29,17 +24,16 @@ const skillGroups = [
   {
     icon: Wrench,
     title: "Tools & Cloud",
-    skills: ["Git", "AWS", "Jira", "Postman", "CI/CD"],
+    skills: ["Git", "Jira", "Postman"],
   },
 ];
 
 const proficiency = [
   { name: "PHP / Laravel", level: 95 },
-  { name: "React.js / Vue.js", level: 90 },
-  { name: "Node.js & REST APIs", level: 88 },
-  { name: "WordPress (Custom + Elementor)", level: 95 },
-  { name: "ColdFusion (Legacy Modernization)", level: 85 },
-  { name: "MySQL & Database Design", level: 92 },
+  { name: "React.js / Vue.js", level: 80 },
+  { name: "Node.js & REST APIs", level: 85 },
+  { name: "ColdFusion (Legacy Modernization)", level: 90 },
+  { name: "MySQL & Database Design", level: 85 },
 ];
 
 export const Skills = () => {

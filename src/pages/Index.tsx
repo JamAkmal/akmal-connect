@@ -24,7 +24,7 @@ const Index = () => {
       addressRegion: "Punjab",
       addressCountry: "PK",
     },
-    knowsAbout: ["PHP", "Laravel", "React.js", "Node.js", "Vue.js", "ColdFusion", "WordPress", "MySQL", "REST API"],
+    knowsAbout: ["PHP", "Laravel", "React.js", "Node.js", "Vue.js", "ColdFusion", "MySQL", "REST API"],
   };
 
   return (

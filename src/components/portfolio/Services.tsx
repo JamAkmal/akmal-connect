@@ -8,12 +8,6 @@ const services = [
     highlight: "Most popular",
   },
   {
-    icon: Globe,
-    title: "WordPress for Restaurants & Small Business",
-    description: "Beautiful, SEO-optimized, fast WordPress sites you can manage yourself. Perfect for restaurants, cafés & local businesses.",
-    highlight: "🇵🇰 Local specialty",
-  },
-  {
     icon: RefreshCw,
     title: "Legacy System Modernization",
     description: "Specialized in ColdFusion maintenance & upgrades - bridge old systems with modern frontends without expensive rewrites.",
@@ -47,7 +41,7 @@ export const Services = () => {
             How I can <span className="gradient-text">help your business</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            From quick WordPress sites to enterprise platforms - pick what fits your need.
+            Pick what fits your need.
           </p>
         </div>
 
