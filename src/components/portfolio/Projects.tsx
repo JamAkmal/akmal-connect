@@ -44,7 +44,7 @@ const projects: Project[] = [
       "Modernized a critical ColdFusion enterprise application - refactored monolithic code into modules, added REST APIs, and integrated modern UI.",
     tech: ["ColdFusion", "SQL Server", "JavaScript"],
     category: ["ColdFusion"],
-    result: "Cut maintenance time in half while extending product lifespan by 5+ years",
+    result: "Cut maintenance time in half while extending product lifespan by 3+ years",
   },
   {
     title: "CRM Platform (React + ColdFusion)",
