@@ -4,12 +4,12 @@ const skillGroups = [
   {
     icon: Code2,
     title: "Frontend",
-    skills: ["HTML5", "CSS3", "JavaScript", "jQuery / AJAX", "Bootstrap", "React.js", "Vue.js"],
+    skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "Tailwind CSS", "jQuery / AJAX", "Bootstrap", "React.js", "Vue.js"],
   },
   {
     icon: Server,
     title: "Backend",
-    skills: ["PHP", "Laravel", "Node.js", "ColdFusion", "REST APIs"],
+    skills: ["PHP", "Laravel", "Node.js", "ColdFusion / CFML", "REST APIs"],
   },
   {
     icon: Database,
@@ -24,7 +24,7 @@ const skillGroups = [
   {
     icon: Wrench,
     title: "Tools & Cloud",
-    skills: ["Git", "Jira", "Postman", "Vercel", "Cloudflare", "Cursor", "Claude", "Swagger", "Docker"],
+    skills: ["Git", "GitHub Actions", "Docker", "Linux / Nginx", "Postman", "Vercel", "Cloudflare", "Cursor", "Claude", "Jira"],
   },
 ];
 
@@ -84,7 +84,14 @@ export const Skills = () => {
                   <span className="font-medium">{p.name}</span>
                   <span className="text-primary font-mono">{p.level}%</span>
                 </div>
-                <div className="h-2 bg-secondary rounded-full overflow-hidden">
+                <div 
+                  className="h-2 bg-secondary rounded-full overflow-hidden"
+                  role="progressbar"
+                  aria-valuenow={p.level}
+                  aria-valuemin={0}
+                  aria-valuemax={100}
+                  aria-label={p.name}
+                >
                   <div
                     className="h-full bg-gradient-to-r from-primary to-primary-glow rounded-full transition-all duration-1000"
                     style={{ width: `${p.level}%` }}
