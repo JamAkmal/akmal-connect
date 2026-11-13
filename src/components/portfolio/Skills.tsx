@@ -24,7 +24,11 @@ const skillGroups = [
   {
     icon: Wrench,
     title: "Tools & Cloud",
-    skills: ["Git", "GitHub Actions", "Docker", "Linux / Nginx", "Postman", "Vercel", "Cloudflare", "Cursor", "Claude", "Jira"],
+    skills: [
+              "Git", "GitHub Actions", "Docker", "Linux / Nginx", "Postman",
+              "Vercel", "Cloudflare", "Jira", "Cursor", "Claude", "Lovable",
+              "GitHub Copilot", "Gemini Code Assist", "Replit", "Bolt"
+            ],
   },
 ];
 
